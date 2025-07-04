@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login | Project Based Internship</title>
+  <link rel="stylesheet" href="Style.css" />
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="logo">SkillSync</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="Signup.html">Sign Up</a>
+    </div>
+  </div>
+
+  <div class="outer-wrapper">
+    <div class="main-container">
+
+      <!-- Left Welcome Section -->
+      <div class="welcome-section">
+        <div class="icon-placeholder">🔐</div>
+        <h1>Welcome Back!</h1>
+        <p>Please log in with your registered credentials to access your personalized dashboard and continue your journey with Project Based Internship.</p>
+      </div>
+
+      <!-- Right Login Form -->
+      <div class="form-section">
+        <form action="login.php" method="post">
+          <h2>Login</h2>
+
+          <input type="email" placeholder="Email" name="email" required />
+          <input type="password" placeholder="Password" name="password" required />
+
+          <select name="role" required>
+            <option value="">Select Role</option>
+            <option value="student">Student</option>
+            <option value="mentor">Industry Mentor</option>
+            <option value="supervisor">Academic Supervisor</option>
+          </select>
+
+          <button type="submit">Log In</button>
+
+           <div class="forgot-password">
+            <a href="forgot_password.html">Forgot Password?</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

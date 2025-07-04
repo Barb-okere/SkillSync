@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academic Supervisor Sign up</title>
+  <link rel="stylesheet" href="Style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">SkillSync</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="Signup.html">Sign Up</a>
+    </div>
+  </div>
+
+
+
+  <!-- Main Section -->
+   <div class="outer-wrapper">
+  <div class="main-container">
+    <!-- Left Side: Welcome -->
+    <div class="welcome-section">
+      <div class="icon-placeholder">🏫</div>
+      <h1>Welcome, Academic Supervisor!</h1>
+      <p>Collaborate with industry and oversee student projects. Help bridge the gap between academia and professional practice.</p>
+    </div>
+  
+
+    <!-- Right Side: Registration Form -->
+    <div class="form-section">
+      <form method="post"  action="supervisorsignup.html">
+        <h2>Create Supervisor Account</h2>
+        <div class="form-row">
+          <input type="text" placeholder="First Name" name="first_name" required>
+          <input type="text" placeholder="Last Name" name="last_name" required>
+        </div>
+        <div class="form-row">
+          <input type="email" placeholder="Email" name="email" required>
+          <input type="text" placeholder="University/Department" name="university_department" required>
+        </div>
+        <div class="form-row">
+          <input type="password" placeholder="Create Password">
+          <input type="password" placeholder="Confirm Password">
+        </div>
+         <div class="checkbox-container">
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to the <a href="#" style="color: #66fcf1; text-decoration: none;">Terms and Conditions</a></label>
+          </div>
+        
+        <button type="submit" class="create-btn">Register as Supervisor</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

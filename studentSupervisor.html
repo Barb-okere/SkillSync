@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student - Supervisor & Mentor</title>
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Shared Navbar -->
+    <div class="navbar">
+        <div class="logo">grace and Barb</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="Signup.html">Sign Up</a>
+
+            <!-- Dropdown Menu -->
+            <div class="dropdown">
+                <button class="dropdown-btn">More ▾</button>
+                <div class="dropdown-content">
+                    <a href="studentDashboard.html"><i class="fas fa-home"></i> Dashboard</a>
+                    <a href="studentProjects.html"><i class="fas fa-file-alt"></i> My Internship Project</a>
+                    <a href="studentSupervisorMentor.html"><i class="fas fa-users"></i> Supervisor & Mentor</a>
+                    <a href="studentLogs.html"><i class="fas fa-clipboard-list"></i> Submit Weekly Log</a>
+                    <a href="studentSettings.html"><i class="fas fa-cog"></i> Settings</a>
+                    <a href="logout.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dashboard-container">
+        <div class="sidebar">
+            <a href="studentDashboard.html"><i class="fas fa-home"></i> Dashboard</a>
+            <a href="studentProjects.html"><i class="fas fa-file-alt"></i> My Internship Project</a>
+            <a href="studentSupervisorMentor.html" class="active"><i class="fas fa-users"></i> Supervisor & Mentor</a>
+            <a href="studentLogs.html"><i class="fas fa-clipboard-list"></i> Submit Weekly Log</a>
+            <a href="studentSettings.html"><i class="fas fa-cog"></i> Settings</a>
+            <a href="logout.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+        </div>
+        <div class="main-content">
+            <h1>My Supervisor & Mentor</h1>
+            <div class="dashboard-card-grid">
+                <div class="dashboard-card">
+                    <div class="icon">🧑‍🏫</div>
+                    <h3>Academic Supervisor</h3>
+                    <p><strong>Name:</strong> Dr. Mary Ngaruiya</p>
+                    <p><strong>University:</strong> Strathmore University</p>
+                    <p><strong>Email:</strong> mngaruiya@strathmore.edu</p>
+                    <button style="margin-top: 1rem; padding: 0.6rem 1rem; background: #4a5568; color: white; border: none; border-radius: 8px; cursor: pointer;">Message Supervisor</button>
+                </div>
+                <div class="dashboard-card">
+                    <div class="icon">💼</div>
+                    <h3>Industry Mentor</h3>
+                    <p><strong>Name:</strong> Jane Smith</p>
+                    <p><strong>Company:</strong> Acme Corp</p>
+                    <p><strong>Email:</strong> jane.smith@acmecorp.com</p>
+                    <button style="margin-top: 1rem; padding: 0.6rem 1rem; background: #4a5568; color: white; border: none; border-radius: 8px; cursor: pointer;">Message Mentor</button>
+                </div>
+            </div>
+            <div style="margin-top: 2rem; background-color: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);">
+                <h2>Communication Guidelines</h2>
+                <p>Regular communication with your supervisor and mentor is crucial for your internship success. Schedule weekly check-ins and don't hesitate to reach out with questions or challenges.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

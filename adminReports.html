@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Reports</title>
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Shared Navbar -->
+    <div class="navbar">
+        <div class="logo">SkillSync</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="Signup.html">Sign Up</a>
+
+        </div>
+    </div>
+
+    <div class="dashboard-container">
+        <div class="sidebar">
+            <a href="admin.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+            <a href="adminUsers.html"><i class="fas fa-users-cog"></i> User Management</a>
+            <a href="adminProjects.html"><i class="fas fa-tasks"></i> Project Oversight</a>
+            <a href="adminSettings.html"><i class="fas fa-cog"></i> Settings</a>
+            <a href="logout.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+        </div>
+        <div class="main-content">
+            <h1>Reports</h1>
+            <div class="dashboard-card-grid">
+                <div class="dashboard-card">
+                    <div class="icon">📈</div>
+                    <h3>User Growth</h3>
+                    <p>Generate reports on user registration trends.</p>
+                </div>
+                <div class="dashboard-card">
+                    <div class="icon">📊</div>
+                    <h3>Project Completion Rates</h3>
+                    <p>Analyze project success and completion metrics.</p>
+                </div>
+                <div class="dashboard-card">
+                    <div class="icon">📉</div>
+                    <h3>Engagement Metrics</h3>
+                    <p>View activity levels of students, mentors, and supervisors.</p>
+                </div>
+            </div>
+            <div style="margin-top: 2rem; background-color: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);">
+                <h2>Generate Custom Report</h2>
+                <p>Select parameters to generate specific reports.</p>
+                <div style="display: flex; gap: 1rem; margin-top: 1rem; flex-wrap: wrap;">
+                    <select style="padding: 0.8rem; border-radius: 8px; border: 1px solid #ddd;">
+                        <option>Report Type</option>
+                        <option>User Activity</option>
+                        <option>Project Status</option>
+                        <option>Log Submissions</option>
+                    </select>
+                    <input type="date" style="padding: 0.8rem; border-radius: 8px; border: 1px solid #ddd;">
+                    <button style="background-color: #66fcf1; color: #1a202c; border: none; padding: 0.8rem 1.5rem; border-radius: 8px; cursor: pointer;">Generate Report</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
